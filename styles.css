@@ -1,0 +1,23 @@
+.israel-image{
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+
+body {
+    flex: auto;
+    text-align: center;
+    margin: 10;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+a {
+    color: #0077cc;
+    text-decoration:wavy
+}
+
+a:hover {
+    text-decoration: underline;
+}
