@@ -12,11 +12,11 @@ displayDay.innerHTML = getDayOfTheWeek();
 
 
 
-function getTimeInUTC() {
+function updateUTCTime() {
+    const timeElement = document.getElementById("utctime");
     const currentTimeMillis = new Date().getTime();
-    return (`Current UTC Time in milliseconds: ${currentTimeMillis}`);
+    timeElement.innerHTML = `Current UTC Time in milliseconds: ${currentTimeMillis}`;
 }
 
-const timeElement = document.getElementById("utctime");
-
-timeElement.innerHTML = getTimeInUTC();
+setInterval(updateUTCTime, 100);
+updateUTCTime();
